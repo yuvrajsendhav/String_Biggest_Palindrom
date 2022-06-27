@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Biggest Palindrom</title>
+</head>
+<body>
+<script type="text/javascript">
+	var arr="Python PHP yuvraj nitin malayalam madam aaaaaaaabbaaaaaaaa";
+	var arr1=arr.split(" ");
+	var s2="";
+	var max=0;
+	for(var i=0; i<arr1.length;i++)
+	{
+		var s=arr1[i];
+		var s1 = "";
+		for(j=s.length-1;j>=0;j--)
+		{
+			s1=s1+s[j];
+		}
+		if(s==s1)
+		{
+			if(max<s.length)
+			{
+				max=s.length;
+				s2=s1;
+			}
+		}
+	}
+	document.write(s2);
+</script>
+</body>
+</html>
